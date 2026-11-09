@@ -1,5 +1,9 @@
 name: Atualizar índices
 
+# A main é protegida e só aceita mudanças por pull request. Por isso, quando
+# os índices ficam desatualizados, a Action envia a correção para a branch
+# bot/indices, abre um pull request e faz o merge dele na hora.
+
 on:
   push:
     branches: [main]
@@ -11,6 +15,11 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: indices
+  cancel-in-progress: false
 
 jobs:
   indices:
@@ -21,12 +30,23 @@ jobs:
         with:
           python-version: "3.12"
       - run: python ferramentas/estrutura.py
-      - name: Commit dos índices
+      - name: Pull request com os índices
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A
-            git commit -m "Atualiza índices e contagens"
-            git push
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Índices já estão em dia."
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c bot/indices
+          git add -A
+          git commit -m "Atualiza índices e contagens"
+          git push --force origin bot/indices
+          if ! gh pr view bot/indices --json state -q .state 2>/dev/null | grep -q OPEN; then
+            gh pr create --base main --head bot/indices \
+              --title "Atualiza índices e contagens" \
+              --body "Gerado automaticamente por \`ferramentas/estrutura.py\`."
+          fi
+          gh pr merge bot/indices --squash --delete-branch

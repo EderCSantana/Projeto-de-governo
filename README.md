@@ -74,5 +74,10 @@ python ferramentas/estrutura.py
 ```
 
 O script cria as páginas que faltam, atualiza os cabeçalhos sem mexer nas
-medidas e refaz os índices e contagens. A cada push na branch `main`, um GitHub
-Action roda o mesmo script e faz commit dos índices atualizados.
+medidas e refaz os índices e contagens. A cada merge na branch `main`, um GitHub
+Action roda o mesmo script e, se algo mudou, abre e mescla sozinho um pull
+request com os índices atualizados.
+
+A branch `main` é protegida: toda mudança entra por pull request, inclusive as
+da coordenação. Cada pull request que mexe nas páginas passa por uma
+verificação automática que confere se os cabeçalhos gerados continuam lá.
