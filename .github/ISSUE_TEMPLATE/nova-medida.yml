@@ -1,0 +1,93 @@
+name: Nova medida
+description: Sugira uma medida para o programa de governo
+title: "[Medida] "
+labels: ["medida", "proposta"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de enviar, confira em COMPETENCIAS.md se o cargo pode agir nessa área.
+  - type: dropdown
+    id: cargo
+    attributes:
+      label: Cargo
+      options:
+        - "Presidente da República"
+        - "Governador(a)"
+        - "Prefeito(a)"
+        - "Senador(a)"
+        - "Deputado(a) federal"
+        - "Deputado(a) estadual ou distrital"
+        - "Vereador(a)"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - "Saúde"
+        - "Educação"
+        - "Segurança pública"
+        - "Transporte e mobilidade"
+        - "Infraestrutura e obras públicas"
+        - "Saneamento básico"
+        - "Habitação"
+        - "Urbanismo e planejamento urbano"
+        - "Meio ambiente e clima"
+        - "Defesa civil e desastres"
+        - "Assistência social"
+        - "Direitos humanos e cidadania"
+        - "Povos indígenas e comunidades tradicionais"
+        - "Trabalho, emprego e renda"
+        - "Previdência social"
+        - "Economia e finanças públicas"
+        - "Desenvolvimento econômico, indústria e comércio"
+        - "Agricultura, pecuária e abastecimento"
+        - "Ciência, tecnologia e inovação"
+        - "Cultura"
+        - "Esporte e lazer"
+        - "Turismo"
+        - "Energia e mineração"
+        - "Comunicações e conectividade"
+        - "Defesa nacional"
+        - "Relações exteriores"
+        - "Gestão pública, transparência e combate à corrupção"
+    validations:
+      required: true
+  - type: dropdown
+    id: prazo
+    attributes:
+      label: Prazo
+      options:
+        - "Curto prazo (primeiro ano)"
+        - "Médio prazo (até o fim do mandato)"
+        - "Longo prazo (além do mandato)"
+    validations:
+      required: true
+  - type: textarea
+    id: medida
+    attributes:
+      label: O que é a medida
+      description: Em uma ou duas frases.
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema que resolve
+      description: Com dados e fonte, se houver.
+  - type: textarea
+    id: como
+    attributes:
+      label: Como fazer
+      description: Lei, decreto, programa, emenda ao orçamento, parceria...
+  - type: input
+    id: custo
+    attributes:
+      label: Custo estimado e fonte dos recursos
+  - type: input
+    id: meta
+    attributes:
+      label: Como medir
+      description: Indicador e meta, com número e prazo.
