@@ -45,12 +45,12 @@ PAPEL_EXECUTIVO = {
 
 PAPEL_LEGISLATIVO = {
     FEDERAL: "Propõe e vota leis federais e emendas à Constituição, aprova o orçamento da União e "
-    "indica emendas parlamentares (individuais e de bancada, de execução obrigatória) e fiscaliza o "
-    "governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.",
+    "indica emendas parlamentares (individuais e de bancada, de execução obrigatória), além de "
+    "fiscalizar o governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.",
     ESTADUAL: "Propõe e vota leis estaduais e emendas à Constituição do estado, aprova o orçamento "
-    "estadual e indica emendas e fiscaliza o governador com CPIs e apoio do Tribunal de Contas do Estado.",
+    "estadual e indica emendas, além de fiscalizar o governador com CPIs e apoio do Tribunal de Contas do Estado.",
     MUNICIPAL: "Propõe e vota leis municipais (assuntos de interesse local), incluindo o plano diretor, "
-    "aprova o orçamento do município e indica emendas, faz indicações à prefeitura e fiscaliza o "
+    "aprova o orçamento do município e indica emendas e faz indicações à prefeitura, além de fiscalizar o "
     "prefeito com apoio do Tribunal de Contas.",
 }
 
@@ -297,7 +297,9 @@ AREAS = [
         "(ANM), transição energética e tarifa social de energia.",
         estadual="Distribuição de gás canalizado e incentivo a energia solar, eólica e "
         "biocombustíveis no estado.",
-        municipal=None,
+        municipal="Iluminação pública (financiada pela contribuição do art. 149-A da Constituição), "
+        "eficiência energética e geração solar nos prédios públicos e uso dos royalties de "
+        "mineração (CFEM) recebidos pelo município.",
     ),
     dict(
         id="comunicacoes",
@@ -305,7 +307,8 @@ AREAS = [
         federal="Telecomunicações (Anatel), radiodifusão, Correios e conectividade de escolas e "
         "regiões sem internet.",
         estadual=None,
-        municipal=None,
+        municipal="Licenciamento de antenas e redes no espaço urbano (Lei Geral de Antenas, Lei "
+        "13.116/2015), wi-fi público e conexão das escolas e unidades de saúde municipais.",
     ),
     dict(
         id="defesa-nacional",

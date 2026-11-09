@@ -6,7 +6,7 @@
 
 ## O que o cargo faz
 
-Propõe e vota leis federais e emendas à Constituição, aprova o orçamento da União e indica emendas parlamentares (individuais e de bancada, de execução obrigatória) e fiscaliza o governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.
+Propõe e vota leis federais e emendas à Constituição, aprova o orçamento da União e indica emendas parlamentares (individuais e de bancada, de execução obrigatória), além de fiscalizar o governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.
 
 Só a Câmara: autoriza a abertura de processo contra o presidente, e os projetos do Executivo começam a tramitar por ela. Representa a população: o número de deputados varia conforme o estado.
 
@@ -16,7 +16,7 @@ Só a Câmara: autoriza a abertura de processo contra o presidente, e os projeto
 
 | Área | Curto | Médio | Longo |
 |---|:-:|:-:|:-:|
-| [Saúde](saude.md) | 0 | 0 | 0 |
+| [Saúde](saude.md) | 1 | 0 | 0 |
 | [Educação](educacao.md) | 0 | 0 | 0 |
 | [Segurança pública](seguranca-publica.md) | 0 | 0 | 0 |
 | [Transporte e mobilidade](transporte-e-mobilidade.md) | 0 | 0 | 0 |

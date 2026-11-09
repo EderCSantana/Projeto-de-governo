@@ -6,7 +6,7 @@
 
 ## O que o cargo faz
 
-Propõe e vota leis federais e emendas à Constituição, aprova o orçamento da União e indica emendas parlamentares (individuais e de bancada, de execução obrigatória) e fiscaliza o governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.
+Propõe e vota leis federais e emendas à Constituição, aprova o orçamento da União e indica emendas parlamentares (individuais e de bancada, de execução obrigatória), além de fiscalizar o governo federal com CPIs, convocação de ministros e apoio do Tribunal de Contas da União.
 
 Só o Senado: aprova autoridades (ministros do STF, diretoria do Banco Central, embaixadores), fixa limites de endividamento de estados e municípios e julga crimes de responsabilidade do presidente. Representa o estado: são três senadores por estado.
 
@@ -42,4 +42,4 @@ Só o Senado: aprova autoridades (ministros do STF, diretoria do Banco Central, 
 | [Comunicações e conectividade](comunicacoes.md) | 0 | 0 | 0 |
 | [Defesa nacional](defesa-nacional.md) | 0 | 0 | 0 |
 | [Relações exteriores](relacoes-exteriores.md) | 0 | 0 | 0 |
-| [Gestão pública, transparência e combate à corrupção](gestao-publica.md) | 0 | 0 | 0 |
+| [Gestão pública, transparência e combate à corrupção](gestao-publica.md) | 0 | 1 | 0 |

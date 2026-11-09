@@ -28,8 +28,8 @@ Nem todo cargo pode agir em toda área. A Constituição divide as competências
 | Cultura | ✅ | ✅ | ✅ |
 | Esporte e lazer | ✅ | ✅ | ✅ |
 | Turismo | ✅ | ✅ | ✅ |
-| Energia e mineração | ✅ | ✅ | — |
-| Comunicações e conectividade | ✅ | — | — |
+| Energia e mineração | ✅ | ✅ | ✅ |
+| Comunicações e conectividade | ✅ | — | ✅ |
 | Defesa nacional | ✅ | — | — |
 | Relações exteriores | ✅ | — | — |
 | Gestão pública, transparência e combate à corrupção | ✅ | ✅ | ✅ |
@@ -186,13 +186,13 @@ Nem todo cargo pode agir em toda área. A Constituição divide as competências
 
 - **União:** Setor elétrico (Aneel, ONS), petróleo, gás e biocombustíveis (ANP), mineração (ANM), transição energética e tarifa social de energia.
 - **Estado:** Distribuição de gás canalizado e incentivo a energia solar, eólica e biocombustíveis no estado.
-- **Município:** não é competência desta esfera.
+- **Município:** Iluminação pública (financiada pela contribuição do art. 149-A da Constituição), eficiência energética e geração solar nos prédios públicos e uso dos royalties de mineração (CFEM) recebidos pelo município.
 
 ### Comunicações e conectividade
 
 - **União:** Telecomunicações (Anatel), radiodifusão, Correios e conectividade de escolas e regiões sem internet.
 - **Estado:** não é competência desta esfera.
-- **Município:** não é competência desta esfera.
+- **Município:** Licenciamento de antenas e redes no espaço urbano (Lei Geral de Antenas, Lei 13.116/2015), wi-fi público e conexão das escolas e unidades de saúde municipais.
 
 ### Defesa nacional
 

@@ -12,7 +12,7 @@ Chefia a prefeitura: executa os serviços locais, propõe o orçamento, nomeia s
 
 | Área | Curto | Médio | Longo |
 |---|:-:|:-:|:-:|
-| [Saúde](saude.md) | 0 | 0 | 0 |
+| [Saúde](saude.md) | 1 | 0 | 0 |
 | [Educação](educacao.md) | 0 | 0 | 0 |
 | [Segurança pública](seguranca-publica.md) | 0 | 0 | 0 |
 | [Transporte e mobilidade](transporte-e-mobilidade.md) | 0 | 0 | 0 |
@@ -32,8 +32,10 @@ Chefia a prefeitura: executa os serviços locais, propõe o orçamento, nomeia s
 | [Cultura](cultura.md) | 0 | 0 | 0 |
 | [Esporte e lazer](esporte-e-lazer.md) | 0 | 0 | 0 |
 | [Turismo](turismo.md) | 0 | 0 | 0 |
+| [Energia e mineração](energia-e-mineracao.md) | 0 | 0 | 0 |
+| [Comunicações e conectividade](comunicacoes.md) | 0 | 0 | 0 |
 | [Gestão pública, transparência e combate à corrupção](gestao-publica.md) | 0 | 0 | 0 |
 
 ## Fora da competência
 
-Estas áreas não são da esfera municipal, por isso não têm seção aqui: Povos indígenas e comunidades tradicionais, Previdência social, Energia e mineração, Comunicações e conectividade, Defesa nacional, Relações exteriores.
+Estas áreas não são da esfera municipal, por isso não têm seção aqui: Povos indígenas e comunidades tradicionais, Previdência social, Defesa nacional, Relações exteriores.

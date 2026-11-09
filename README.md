@@ -44,13 +44,13 @@ do Legislativo, as medidas são leis, emendas ao orçamento e fiscalização, e 
 <!-- inicio:indice (gerado por ferramentas/estrutura.py) -->
 | Cargo | Esfera | Áreas | Medidas |
 |---|---|:-:|:-:|
-| [Presidente da República](cargos/presidente/README.md) | União | 27 | 0 |
-| [Governador(a)](cargos/governador/README.md) | Estado | 23 | 0 |
-| [Prefeito(a)](cargos/prefeito/README.md) | Município | 21 | 0 |
-| [Senador(a)](cargos/senador/README.md) | União | 27 | 0 |
-| [Deputado(a) federal](cargos/deputado-federal/README.md) | União | 27 | 0 |
-| [Deputado(a) estadual ou distrital](cargos/deputado-estadual/README.md) | Estado | 23 | 0 |
-| [Vereador(a)](cargos/vereador/README.md) | Município | 21 | 0 |
+| [Presidente da República](cargos/presidente/README.md) | União | 27 | 1 |
+| [Governador(a)](cargos/governador/README.md) | Estado | 23 | 1 |
+| [Prefeito(a)](cargos/prefeito/README.md) | Município | 23 | 1 |
+| [Senador(a)](cargos/senador/README.md) | União | 27 | 1 |
+| [Deputado(a) federal](cargos/deputado-federal/README.md) | União | 27 | 1 |
+| [Deputado(a) estadual ou distrital](cargos/deputado-estadual/README.md) | Estado | 23 | 1 |
+| [Vereador(a)](cargos/vereador/README.md) | Município | 23 | 1 |
 <!-- fim:indice -->
 
 ## Como participar

@@ -13,7 +13,7 @@ Chefia o governo do estado: executa as políticas estaduais, propõe o orçament
 | Área | Curto | Médio | Longo |
 |---|:-:|:-:|:-:|
 | [Saúde](saude.md) | 0 | 0 | 0 |
-| [Educação](educacao.md) | 0 | 0 | 0 |
+| [Educação](educacao.md) | 0 | 1 | 0 |
 | [Segurança pública](seguranca-publica.md) | 0 | 0 | 0 |
 | [Transporte e mobilidade](transporte-e-mobilidade.md) | 0 | 0 | 0 |
 | [Infraestrutura e obras públicas](infraestrutura-e-obras.md) | 0 | 0 | 0 |

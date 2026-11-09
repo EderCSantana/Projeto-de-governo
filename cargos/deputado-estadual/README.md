@@ -6,7 +6,7 @@
 
 ## O que o cargo faz
 
-Propõe e vota leis estaduais e emendas à Constituição do estado, aprova o orçamento estadual e indica emendas e fiscaliza o governador com CPIs e apoio do Tribunal de Contas do Estado.
+Propõe e vota leis estaduais e emendas à Constituição do estado, aprova o orçamento estadual e indica emendas, além de fiscalizar o governador com CPIs e apoio do Tribunal de Contas do Estado.
 
 No Distrito Federal, o deputado distrital acumula as competências estaduais e municipais.
 
@@ -18,7 +18,7 @@ No Distrito Federal, o deputado distrital acumula as competências estaduais e m
 |---|:-:|:-:|:-:|
 | [Saúde](saude.md) | 0 | 0 | 0 |
 | [Educação](educacao.md) | 0 | 0 | 0 |
-| [Segurança pública](seguranca-publica.md) | 0 | 0 | 0 |
+| [Segurança pública](seguranca-publica.md) | 1 | 0 | 0 |
 | [Transporte e mobilidade](transporte-e-mobilidade.md) | 0 | 0 | 0 |
 | [Infraestrutura e obras públicas](infraestrutura-e-obras.md) | 0 | 0 | 0 |
 | [Saneamento básico](saneamento.md) | 0 | 0 | 0 |

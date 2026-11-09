@@ -20,6 +20,22 @@
 
 Não precisa atualizar os índices: eles são refeitos automaticamente depois do merge.
 
+### Exemplos para se inspirar
+
+Cada cargo tem uma medida de exemplo, escrita pela coordenação para mostrar o
+nível de detalhe esperado. Elas ainda estão como `proposta` e podem ser
+discutidas, mudadas ou descartadas como qualquer outra.
+
+| Cargo | Medida | Prazo |
+|---|---|---|
+| Prefeito(a) | [Fila transparente de consultas e exames](cargos/prefeito/saude.md) | Curto |
+| Governador(a) | [Ensino médio em tempo integral](cargos/governador/educacao.md) | Médio |
+| Presidente | [Universalização da água e do esgoto](cargos/presidente/saneamento.md) | Longo |
+| Senador(a) | [Rastreabilidade das emendas parlamentares](cargos/senador/gestao-publica.md) | Médio |
+| Deputado(a) federal | [Emendas para a atenção básica com critério público](cargos/deputado-federal/saude.md) | Curto |
+| Deputado(a) estadual | [Dados abertos da segurança pública](cargos/deputado-estadual/seguranca-publica.md) | Curto |
+| Vereador(a) | [IPTU progressivo para imóveis vazios](cargos/vereador/urbanismo.md) | Médio |
+
 ## Revisão e aprovação
 
 - Cada pull request deve trazer **uma medida**, ou um conjunto pequeno e ligado

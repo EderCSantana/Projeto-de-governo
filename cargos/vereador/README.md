@@ -6,7 +6,7 @@
 
 ## O que o cargo faz
 
-Propõe e vota leis municipais (assuntos de interesse local), incluindo o plano diretor, aprova o orçamento do município e indica emendas, faz indicações à prefeitura e fiscaliza o prefeito com apoio do Tribunal de Contas.
+Propõe e vota leis municipais (assuntos de interesse local), incluindo o plano diretor, aprova o orçamento do município e indica emendas e faz indicações à prefeitura, além de fiscalizar o prefeito com apoio do Tribunal de Contas.
 
 Também aprova a Lei Orgânica do Município e suas mudanças.
 
@@ -23,7 +23,7 @@ Também aprova a Lei Orgânica do Município e suas mudanças.
 | [Infraestrutura e obras públicas](infraestrutura-e-obras.md) | 0 | 0 | 0 |
 | [Saneamento básico](saneamento.md) | 0 | 0 | 0 |
 | [Habitação](habitacao.md) | 0 | 0 | 0 |
-| [Urbanismo e planejamento urbano](urbanismo.md) | 0 | 0 | 0 |
+| [Urbanismo e planejamento urbano](urbanismo.md) | 0 | 1 | 0 |
 | [Meio ambiente e clima](meio-ambiente.md) | 0 | 0 | 0 |
 | [Defesa civil e desastres](defesa-civil.md) | 0 | 0 | 0 |
 | [Assistência social](assistencia-social.md) | 0 | 0 | 0 |
@@ -36,8 +36,10 @@ Também aprova a Lei Orgânica do Município e suas mudanças.
 | [Cultura](cultura.md) | 0 | 0 | 0 |
 | [Esporte e lazer](esporte-e-lazer.md) | 0 | 0 | 0 |
 | [Turismo](turismo.md) | 0 | 0 | 0 |
+| [Energia e mineração](energia-e-mineracao.md) | 0 | 0 | 0 |
+| [Comunicações e conectividade](comunicacoes.md) | 0 | 0 | 0 |
 | [Gestão pública, transparência e combate à corrupção](gestao-publica.md) | 0 | 0 | 0 |
 
 ## Fora da competência
 
-Estas áreas não são da esfera municipal, por isso não têm seção aqui: Povos indígenas e comunidades tradicionais, Previdência social, Energia e mineração, Comunicações e conectividade, Defesa nacional, Relações exteriores.
+Estas áreas não são da esfera municipal, por isso não têm seção aqui: Povos indígenas e comunidades tradicionais, Previdência social, Defesa nacional, Relações exteriores.

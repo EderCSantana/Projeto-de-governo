@@ -17,7 +17,7 @@ Chefia o governo federal: executa as políticas nacionais, propõe o orçamento 
 | [Segurança pública](seguranca-publica.md) | 0 | 0 | 0 |
 | [Transporte e mobilidade](transporte-e-mobilidade.md) | 0 | 0 | 0 |
 | [Infraestrutura e obras públicas](infraestrutura-e-obras.md) | 0 | 0 | 0 |
-| [Saneamento básico](saneamento.md) | 0 | 0 | 0 |
+| [Saneamento básico](saneamento.md) | 0 | 0 | 1 |
 | [Habitação](habitacao.md) | 0 | 0 | 0 |
 | [Urbanismo e planejamento urbano](urbanismo.md) | 0 | 0 | 0 |
 | [Meio ambiente e clima](meio-ambiente.md) | 0 | 0 | 0 |

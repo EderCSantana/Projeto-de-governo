@@ -1,0 +1,29 @@
+name: Verificar estrutura
+
+on:
+  pull_request:
+    paths:
+      - "cargos/**"
+      - "ferramentas/**"
+      - "README.md"
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Os índices são refeitos depois do merge, então aqui só os avisos contam:
+      # marcador do cabeçalho apagado ou página fora da lista de áreas.
+      - name: Conferir marcadores e páginas
+        run: |
+          python ferramentas/estrutura.py | tee saida.txt
+          if grep -q '^aviso:' saida.txt; then
+            echo "::error::Há avisos acima. Confira se a linha 'Fim do cabeçalho gerado' continua na página."
+            exit 1
+          fi
