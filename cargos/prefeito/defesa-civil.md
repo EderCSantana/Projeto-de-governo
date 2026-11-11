@@ -1,4 +1,4 @@
-# Defesa civil e desastres · Prefeito(a)
+# Defesa civil · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 

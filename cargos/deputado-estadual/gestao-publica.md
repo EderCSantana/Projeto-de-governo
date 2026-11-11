@@ -1,8 +1,8 @@
-# Gestão pública, transparência e combate à corrupção · Deputado(a) estadual ou distrital
+# Gestão pública · Deputado(a) estadual ou distrital
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera estadual:** Servidores do estado, compras, controladoria, transparência e atendimento ao cidadão.
+> **Esta área na esfera estadual:** Organização das secretarias, planejamento e metas do governo do estado.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Deputado(a) federal
+# Meio ambiente · Deputado(a) federal
 
 [← Deputado(a) federal](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Política nacional de meio ambiente e clima, Ibama e ICMBio, florestas e unidades de conservação federais, licenciamento de grandes empreendimentos, metas climáticas e águas da União (ANA).
+> **Esta área na esfera federal:** Política nacional de meio ambiente, Ibama, licenciamento de grandes empreendimentos e controle da poluição.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

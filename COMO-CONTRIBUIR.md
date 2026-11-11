@@ -31,10 +31,10 @@ discutidas, mudadas ou descartadas como qualquer outra.
 | Prefeito(a) | [Fila transparente de consultas e exames](cargos/prefeito/saude.md) | Curto |
 | Governador(a) | [Ensino médio em tempo integral](cargos/governador/educacao.md) | Médio |
 | Presidente | [Universalização da água e do esgoto](cargos/presidente/saneamento.md) | Longo |
-| Senador(a) | [Rastreabilidade das emendas parlamentares](cargos/senador/gestao-publica.md) | Médio |
+| Senador(a) | [Rastreabilidade das emendas parlamentares](cargos/senador/transparencia.md) | Médio |
 | Deputado(a) federal | [Emendas para a atenção básica com critério público](cargos/deputado-federal/saude.md) | Curto |
 | Deputado(a) estadual | [Dados abertos da segurança pública](cargos/deputado-estadual/seguranca-publica.md) | Curto |
-| Vereador(a) | [IPTU progressivo para imóveis vazios](cargos/vereador/urbanismo.md) | Médio |
+| Vereador(a) | [IPTU progressivo para imóveis vazios](cargos/vereador/planejamento-urbano.md) | Médio |
 
 ## Revisão e aprovação
 

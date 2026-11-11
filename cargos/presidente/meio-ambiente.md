@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Presidente da República
+# Meio ambiente · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Política nacional de meio ambiente e clima, Ibama e ICMBio, florestas e unidades de conservação federais, licenciamento de grandes empreendimentos, metas climáticas e águas da União (ANA).
+> **O que este cargo faz nesta área:** Política nacional de meio ambiente, Ibama, licenciamento de grandes empreendimentos e controle da poluição.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

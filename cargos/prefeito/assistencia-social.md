@@ -2,7 +2,7 @@
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** CRAS e CREAS, abrigos, acompanhamento de famílias, inscrição no Cadastro Único e atendimento à população em situação de rua.
+> **O que este cargo faz nesta área:** CRAS e CREAS, abrigos, acompanhamento de famílias e inscrição no Cadastro Único.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

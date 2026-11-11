@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Deputado(a) estadual ou distrital
+# Meio ambiente · Deputado(a) estadual ou distrital
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera estadual:** Órgão ambiental estadual, licenciamento, unidades de conservação estaduais e gestão dos recursos hídricos do estado.
+> **Esta área na esfera estadual:** Órgão ambiental estadual, licenciamento e fiscalização.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

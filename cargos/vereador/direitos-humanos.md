@@ -1,8 +1,8 @@
-# Direitos humanos e cidadania · Vereador(a)
+# Direitos humanos · Vereador(a)
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Conselhos tutelares, centros de referência, acessibilidade e políticas locais para mulheres, juventude, pessoas idosas e igualdade racial.
+> **Esta área na esfera municipal:** Centros de referência em direitos humanos, conselho municipal e educação em direitos.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

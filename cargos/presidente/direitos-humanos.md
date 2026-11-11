@@ -1,8 +1,8 @@
-# Direitos humanos e cidadania · Presidente da República
+# Direitos humanos · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Políticas nacionais para mulheres, igualdade racial, pessoas com deficiência, pessoas idosas, crianças e adolescentes e pessoas LGBTQIA+, Disque 100 e legislação de direitos civis.
+> **O que este cargo faz nesta área:** Política nacional de direitos humanos, Disque 100, proteção a defensores de direitos humanos e combate à tortura e ao trabalho escravo.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

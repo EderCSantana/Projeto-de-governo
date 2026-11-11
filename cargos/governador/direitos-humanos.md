@@ -1,8 +1,8 @@
-# Direitos humanos e cidadania · Governador(a)
+# Direitos humanos · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Programas de proteção (testemunhas, defensores de direitos humanos), delegacias e casas da mulher e conselhos estaduais.
+> **O que este cargo faz nesta área:** Programas estaduais de proteção (testemunhas, defensores de direitos humanos), comitês de combate à tortura e conselho estadual de direitos humanos.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

@@ -1,4 +1,4 @@
-# Defesa civil e desastres · Vereador(a)
+# Defesa civil · Vereador(a)
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 

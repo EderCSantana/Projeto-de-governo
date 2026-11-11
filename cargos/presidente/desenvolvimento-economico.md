@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Presidente da República
+# Desenvolvimento econômico · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Política industrial e de comércio exterior, BNDES, crédito para pequenas empresas, defesa da concorrência (Cade) e do consumidor.
+> **O que este cargo faz nesta área:** Política de desenvolvimento produtivo, BNDES e bancos públicos federais e crédito para investimento.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Deputado(a) federal
+# Desenvolvimento econômico · Deputado(a) federal
 
 [← Deputado(a) federal](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Política industrial e de comércio exterior, BNDES, crédito para pequenas empresas, defesa da concorrência (Cade) e do consumidor.
+> **Esta área na esfera federal:** Política de desenvolvimento produtivo, BNDES e bancos públicos federais e crédito para investimento.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

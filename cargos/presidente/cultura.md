@@ -2,7 +2,7 @@
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Lei Rouanet, Lei Aldir Blanc, patrimônio histórico (Iphan), Ancine e museus e bibliotecas federais.
+> **O que este cargo faz nesta área:** Lei Rouanet, Política Nacional Aldir Blanc, Ancine e museus e bibliotecas federais.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

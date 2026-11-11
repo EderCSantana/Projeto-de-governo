@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Deputado(a) estadual ou distrital
+# Desenvolvimento econômico · Deputado(a) estadual ou distrital
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera estadual:** Atração de investimentos, agências e bancos de fomento estaduais e Procon estadual.
+> **Esta área na esfera estadual:** Atração de investimentos, agências e bancos de fomento estaduais e incentivos fiscais dentro das regras da reforma tributária.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

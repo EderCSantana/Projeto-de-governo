@@ -2,7 +2,7 @@
 
 [← Deputado(a) federal](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Programas nacionais de moradia, financiamento habitacional e regularização fundiária em terras da União.
+> **Esta área na esfera federal:** Programas nacionais de moradia (Minha Casa, Minha Vida) e financiamento habitacional.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

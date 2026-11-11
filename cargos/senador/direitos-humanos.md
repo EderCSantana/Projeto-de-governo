@@ -1,8 +1,8 @@
-# Direitos humanos e cidadania · Senador(a)
+# Direitos humanos · Senador(a)
 
 [← Senador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Políticas nacionais para mulheres, igualdade racial, pessoas com deficiência, pessoas idosas, crianças e adolescentes e pessoas LGBTQIA+, Disque 100 e legislação de direitos civis.
+> **Esta área na esfera federal:** Política nacional de direitos humanos, Disque 100, proteção a defensores de direitos humanos e combate à tortura e ao trabalho escravo.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

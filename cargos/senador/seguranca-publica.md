@@ -2,7 +2,7 @@
 
 [← Senador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Polícia Federal, Polícia Rodoviária Federal, Força Nacional, controle de fronteiras, armas e crimes interestaduais e internacionais, presídios federais, Fundo Nacional de Segurança Pública e legislação penal.
+> **Esta área na esfera federal:** Polícia Federal, Polícia Rodoviária Federal, Força Nacional, controle de fronteiras, armas e crimes interestaduais e internacionais, Fundo Nacional de Segurança Pública e legislação penal.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

@@ -2,7 +2,7 @@
 
 [← Senador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Lei Rouanet, Lei Aldir Blanc, patrimônio histórico (Iphan), Ancine e museus e bibliotecas federais.
+> **Esta área na esfera federal:** Lei Rouanet, Política Nacional Aldir Blanc, Ancine e museus e bibliotecas federais.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

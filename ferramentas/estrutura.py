@@ -74,269 +74,9 @@ CUIDADO_LEGISLATIVO = (
     "depende do Executivo, prefira indicações, emendas ao orçamento e fiscalização."
 )
 
-# Áreas públicas e o que cada esfera faz nelas. None = não é competência daquela esfera.
-AREAS = [
-    dict(
-        id="saude",
-        nome="Saúde",
-        federal="Coordena o SUS, financia estados e municípios, compra vacinas e medicamentos "
-        "estratégicos, regula planos de saúde (ANS) e a vigilância sanitária (Anvisa) e mantém "
-        "hospitais federais e universitários.",
-        estadual="Hospitais regionais e de alta complexidade, hemocentros, laboratórios centrais, "
-        "regulação de leitos, assistência farmacêutica especializada e apoio aos municípios.",
-        municipal="Atenção básica (UBS e Estratégia Saúde da Família), UPAs, vigilância "
-        "epidemiológica e sanitária local, combate a endemias e saúde bucal e mental na rede municipal.",
-    ),
-    dict(
-        id="educacao",
-        nome="Educação",
-        federal="Universidades e institutos federais, ensino superior (ProUni, Fies, Capes), Base "
-        "Nacional Comum Curricular, Enem, complementação do Fundeb e programas de merenda (PNAE), "
-        "livro didático e transporte escolar.",
-        estadual="Ensino médio, parte do ensino fundamental, ensino técnico e universidades "
-        "estaduais e formação dos professores da rede.",
-        municipal="Creches, pré-escola e ensino fundamental, alfabetização, educação de jovens e "
-        "adultos, merenda e transporte escolar.",
-    ),
-    dict(
-        id="seguranca-publica",
-        nome="Segurança pública",
-        federal="Polícia Federal, Polícia Rodoviária Federal, Força Nacional, controle de fronteiras, "
-        "armas e crimes interestaduais e internacionais, presídios federais, Fundo Nacional de "
-        "Segurança Pública e legislação penal.",
-        estadual="Polícia Militar, Polícia Civil, Corpo de Bombeiros, polícia científica e sistema "
-        "prisional. É o principal responsável pela segurança no dia a dia.",
-        municipal="Guarda municipal, videomonitoramento, iluminação pública, ocupação de espaços "
-        "públicos e prevenção da violência. O município não comanda polícia.",
-    ),
-    dict(
-        id="transporte-e-mobilidade",
-        nome="Transporte e mobilidade",
-        federal="Rodovias, ferrovias e hidrovias federais, portos e aeroportos (diretamente ou por "
-        "concessão), agências reguladoras (ANTT, Antaq, Anac), Código de Trânsito e transporte "
-        "interestadual.",
-        estadual="Rodovias estaduais, transporte intermunicipal e metropolitano (metrô, trens, "
-        "ônibus) e Detran.",
-        municipal="Transporte coletivo urbano, trânsito e sinalização, ciclovias, calçadas, táxi e "
-        "transporte por aplicativo.",
-    ),
-    dict(
-        id="infraestrutura-e-obras",
-        nome="Infraestrutura e obras públicas",
-        federal="Grandes obras de interesse nacional, transferências para obras de estados e "
-        "municípios e parcerias público-privadas federais.",
-        estadual="Obras estaduais (estradas, prédios, barragens), parcerias público-privadas "
-        "estaduais e apoio a obras municipais.",
-        municipal="Pavimentação, drenagem, pontes, prédios públicos, manutenção urbana e zeladoria.",
-    ),
-    dict(
-        id="saneamento",
-        nome="Saneamento básico",
-        federal="Marco legal do saneamento, normas de referência (ANA), financiamento (Caixa, BNDES) "
-        "e metas nacionais de universalização.",
-        estadual="Companhias estaduais de saneamento, prestação regionalizada e saneamento nas "
-        "regiões metropolitanas.",
-        municipal="É o titular do serviço: água, esgoto, coleta e destinação do lixo e drenagem. "
-        "Presta diretamente ou contrata e faz o plano municipal de saneamento.",
-    ),
-    dict(
-        id="habitacao",
-        nome="Habitação",
-        federal="Programas nacionais de moradia, financiamento habitacional e regularização "
-        "fundiária em terras da União.",
-        estadual="Companhias estaduais de habitação, programas estaduais e contrapartidas aos "
-        "programas federais.",
-        municipal="Cadastro e seleção das famílias, terrenos, regularização fundiária urbana, "
-        "urbanização de favelas e aluguel social.",
-    ),
-    dict(
-        id="urbanismo",
-        nome="Urbanismo e planejamento urbano",
-        federal="Diretrizes nacionais (Estatuto da Cidade), política de desenvolvimento urbano e "
-        "regional e financiamento.",
-        estadual="Planejamento das regiões metropolitanas e aglomerações urbanas.",
-        municipal="Plano diretor, zoneamento e uso do solo, licenciamento de obras, praças e "
-        "parques.",
-    ),
-    dict(
-        id="meio-ambiente",
-        nome="Meio ambiente e clima",
-        federal="Política nacional de meio ambiente e clima, Ibama e ICMBio, florestas e unidades "
-        "de conservação federais, licenciamento de grandes empreendimentos, metas climáticas e "
-        "águas da União (ANA).",
-        estadual="Órgão ambiental estadual, licenciamento, unidades de conservação estaduais e "
-        "gestão dos recursos hídricos do estado.",
-        municipal="Licenciamento de impacto local, arborização, áreas verdes, fiscalização local e "
-        "educação ambiental.",
-    ),
-    dict(
-        id="defesa-civil",
-        nome="Defesa civil e desastres",
-        federal="Sistema Nacional de Proteção e Defesa Civil, recursos para resposta e reconstrução "
-        "e alertas e monitoramento (Cemaden).",
-        estadual="Defesa civil estadual, Corpo de Bombeiros e apoio aos municípios em desastres.",
-        municipal="Defesa civil municipal, mapeamento de áreas de risco, planos de contingência, "
-        "alertas e abrigos.",
-    ),
-    dict(
-        id="assistencia-social",
-        nome="Assistência social",
-        federal="Bolsa Família, Benefício de Prestação Continuada (BPC), Cadastro Único e "
-        "cofinanciamento do SUAS.",
-        estadual="Cofinanciamento e apoio técnico aos municípios e serviços regionais de média e "
-        "alta complexidade.",
-        municipal="CRAS e CREAS, abrigos, acompanhamento de famílias, inscrição no Cadastro Único e "
-        "atendimento à população em situação de rua.",
-    ),
-    dict(
-        id="direitos-humanos",
-        nome="Direitos humanos e cidadania",
-        federal="Políticas nacionais para mulheres, igualdade racial, pessoas com deficiência, "
-        "pessoas idosas, crianças e adolescentes e pessoas LGBTQIA+, Disque 100 e legislação de "
-        "direitos civis.",
-        estadual="Programas de proteção (testemunhas, defensores de direitos humanos), delegacias e "
-        "casas da mulher e conselhos estaduais.",
-        municipal="Conselhos tutelares, centros de referência, acessibilidade e políticas locais "
-        "para mulheres, juventude, pessoas idosas e igualdade racial.",
-    ),
-    dict(
-        id="povos-indigenas-e-tradicionais",
-        nome="Povos indígenas e comunidades tradicionais",
-        federal="Demarcação de terras indígenas, Funai, saúde indígena (Sesai) e titulação de "
-        "territórios quilombolas (Incra).",
-        estadual="Titulação de territórios quilombolas em terras estaduais, educação escolar "
-        "indígena e quilombola e apoio às comunidades.",
-        municipal=None,
-    ),
-    dict(
-        id="trabalho-e-renda",
-        nome="Trabalho, emprego e renda",
-        federal="Legislação trabalhista, salário mínimo, seguro-desemprego, FGTS e fiscalização do "
-        "trabalho.",
-        estadual="Qualificação profissional, postos do Sine e programas de primeiro emprego.",
-        municipal="Intermediação de mão de obra, qualificação local, apoio a microempreendedores e "
-        "economia solidária.",
-    ),
-    dict(
-        id="previdencia",
-        nome="Previdência social",
-        federal="INSS e Regime Geral de Previdência Social: regras de aposentadoria, pensões e "
-        "benefícios.",
-        estadual=None,
-        municipal=None,
-    ),
-    dict(
-        id="financas-publicas",
-        nome="Economia e finanças públicas",
-        federal="Orçamento da União, tributos federais, reforma tributária (CBS e IBS), dívida "
-        "pública, repasses aos estados e municípios (FPE, FPM) e política fiscal. A política "
-        "monetária é do Banco Central, que é autônomo.",
-        estadual="Orçamento do estado, ICMS (em transição para o IBS), IPVA, ITCMD, dívida "
-        "estadual e previdência dos servidores do estado.",
-        municipal="Orçamento do município, IPTU, ISS (em transição para o IBS), ITBI, taxas e "
-        "previdência dos servidores municipais.",
-    ),
-    dict(
-        id="desenvolvimento-economico",
-        nome="Desenvolvimento econômico, indústria e comércio",
-        federal="Política industrial e de comércio exterior, BNDES, crédito para pequenas empresas, "
-        "defesa da concorrência (Cade) e do consumidor.",
-        estadual="Atração de investimentos, agências e bancos de fomento estaduais e Procon "
-        "estadual.",
-        municipal="Alvarás e ambiente de negócios local, Sala do Empreendedor, feiras e comércio "
-        "local e Procon municipal.",
-    ),
-    dict(
-        id="agricultura",
-        nome="Agricultura, pecuária e abastecimento",
-        federal="Plano Safra, crédito rural (Pronaf), Embrapa, defesa agropecuária, reforma agrária "
-        "(Incra) e Conab.",
-        estadual="Assistência técnica e extensão rural, defesa sanitária animal e vegetal e "
-        "estradas rurais estaduais.",
-        municipal="Estradas vicinais, compra da agricultura familiar para a merenda, feiras, "
-        "mercados municipais e hortas urbanas.",
-    ),
-    dict(
-        id="ciencia-tecnologia-e-inovacao",
-        nome="Ciência, tecnologia e inovação",
-        federal="CNPq, Finep, institutos de pesquisa e política nacional de inovação e de governo "
-        "digital.",
-        estadual="Fundação de amparo à pesquisa, parques tecnológicos e universidades estaduais.",
-        municipal="Inclusão digital (internet pública, telecentros), apoio a empresas inovadoras "
-        "locais e governo digital municipal.",
-    ),
-    dict(
-        id="cultura",
-        nome="Cultura",
-        federal="Lei Rouanet, Lei Aldir Blanc, patrimônio histórico (Iphan), Ancine e museus e "
-        "bibliotecas federais.",
-        estadual="Equipamentos culturais estaduais, editais, festivais e patrimônio do estado.",
-        municipal="Centros culturais, bibliotecas, festas populares, editais locais e patrimônio "
-        "do município.",
-    ),
-    dict(
-        id="esporte-e-lazer",
-        nome="Esporte e lazer",
-        federal="Lei de Incentivo ao Esporte, Bolsa Atleta, grandes eventos e programas nacionais "
-        "de esporte educacional.",
-        estadual="Equipamentos e programas estaduais e jogos escolares.",
-        municipal="Quadras, praças esportivas, escolinhas, eventos e ligas locais.",
-    ),
-    dict(
-        id="turismo",
-        nome="Turismo",
-        federal="Embratur, promoção internacional, cadastro de prestadores (Cadastur) e "
-        "financiamento (Fungetur).",
-        estadual="Promoção do estado, rotas regionais e infraestrutura turística.",
-        municipal="Calendário de eventos, sinalização turística e conservação dos atrativos locais.",
-    ),
-    dict(
-        id="energia-e-mineracao",
-        nome="Energia e mineração",
-        federal="Setor elétrico (Aneel, ONS), petróleo, gás e biocombustíveis (ANP), mineração "
-        "(ANM), transição energética e tarifa social de energia.",
-        estadual="Distribuição de gás canalizado e incentivo a energia solar, eólica e "
-        "biocombustíveis no estado.",
-        municipal="Iluminação pública (financiada pela contribuição do art. 149-A da Constituição), "
-        "eficiência energética e geração solar nos prédios públicos e uso dos royalties de "
-        "mineração (CFEM) recebidos pelo município.",
-    ),
-    dict(
-        id="comunicacoes",
-        nome="Comunicações e conectividade",
-        federal="Telecomunicações (Anatel), radiodifusão, Correios e conectividade de escolas e "
-        "regiões sem internet.",
-        estadual=None,
-        municipal="Licenciamento de antenas e redes no espaço urbano (Lei Geral de Antenas, Lei "
-        "13.116/2015), wi-fi público e conexão das escolas e unidades de saúde municipais.",
-    ),
-    dict(
-        id="defesa-nacional",
-        nome="Defesa nacional",
-        federal="Forças Armadas, indústria de defesa e proteção das fronteiras, do mar e do espaço "
-        "aéreo.",
-        estadual=None,
-        municipal=None,
-    ),
-    dict(
-        id="relacoes-exteriores",
-        nome="Relações exteriores",
-        federal="Política externa, diplomacia, acordos internacionais, Mercosul e atendimento a "
-        "brasileiros no exterior.",
-        estadual=None,
-        municipal=None,
-    ),
-    dict(
-        id="gestao-publica",
-        nome="Gestão pública, transparência e combate à corrupção",
-        federal="Servidores federais, compras públicas, Controladoria-Geral da União, transparência "
-        "e relação com estados e municípios.",
-        estadual="Servidores do estado, compras, controladoria, transparência e atendimento ao "
-        "cidadão.",
-        municipal="Servidores municipais, compras, ouvidoria, transparência e atendimento ao "
-        "cidadão.",
-    ),
-]
+# Áreas públicas, eixos e o que cada esfera faz em cada área: ver ferramentas/areas.py.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from areas import AREAS, EIXOS  # noqa: E402
 
 PRAZOS = [
     ("Curto prazo", "Primeiro ano de mandato."),
@@ -423,20 +163,25 @@ def indice_cargo(cargo, contagens):
         linhas += ["", PAPEL_EXTRA[cargo["id"]]]
     if not executivo(cargo):
         linhas += ["", f"> **Atenção:** {CUIDADO_LEGISLATIVO}"]
-    linhas += [
-        "",
-        "## Áreas",
-        "",
-        "| Área | Curto | Médio | Longo |",
-        "|---|:-:|:-:|:-:|",
-    ]
-    for area in areas_de(cargo):
-        c = contagens[area["id"]]
-        linhas.append(
-            f"| [{area['nome']}]({area['id']}.md) | "
-            + " | ".join(str(c[t]) for t, _ in PRAZOS)
-            + " |"
-        )
+    linhas += ["", "## Áreas"]
+    for eixo, nome_eixo in EIXOS:
+        do_eixo = [a for a in areas_de(cargo) if a["eixo"] == eixo]
+        if not do_eixo:
+            continue
+        linhas += [
+            "",
+            f"### {nome_eixo}",
+            "",
+            "| Área | Curto | Médio | Longo |",
+            "|---|:-:|:-:|:-:|",
+        ]
+        for area in do_eixo:
+            c = contagens[area["id"]]
+            linhas.append(
+                f"| [{area['nome']}]({area['id']}.md) | "
+                + " | ".join(str(c[t]) for t, _ in PRAZOS)
+                + " |"
+            )
     fora = [a["nome"] for a in AREAS if not a[esfera]]
     if fora:
         linhas += [
@@ -460,16 +205,21 @@ def competencias():
         "União, estados e municípios. Dentro de cada esfera, quem **executa** é o Executivo "
         "(presidente, governador, prefeito) e quem **legisla e fiscaliza** é o Legislativo "
         "(senadores e deputados federais, deputados estaduais, vereadores).",
-        "",
-        "| Área | União | Estado | Município |",
-        "|---|:-:|:-:|:-:|",
     ]
-    for area in AREAS:
-        linhas.append(
-            f"| {area['nome']} | "
-            + " | ".join("✅" if area[e] else "—" for e in ESFERAS)
-            + " |"
-        )
+    for eixo, nome_eixo in EIXOS:
+        linhas += [
+            "",
+            f"### {nome_eixo}",
+            "",
+            "| Área | União | Estado | Município |",
+            "|---|:-:|:-:|:-:|",
+        ]
+        for area in (a for a in AREAS if a["eixo"] == eixo):
+            linhas.append(
+                f"| {area['nome']} | "
+                + " | ".join("✅" if area[e] else "—" for e in ESFERAS)
+                + " |"
+            )
     linhas += [
         "",
         "✅ a esfera atua na área · — não é competência da esfera",
@@ -490,11 +240,13 @@ def competencias():
         "## O que cada esfera faz em cada área",
         "",
     ]
-    for area in AREAS:
-        linhas += [f"### {area['nome']}", ""]
-        for esfera, nome in ESFERAS.items():
-            linhas.append(f"- **{nome}:** {area[esfera] or 'não é competência desta esfera.'}")
-        linhas.append("")
+    for eixo, nome_eixo in EIXOS:
+        linhas += [f"### {nome_eixo}", ""]
+        for area in (a for a in AREAS if a["eixo"] == eixo):
+            linhas += [f"#### {area['nome']}", ""]
+            for esfera, nome in ESFERAS.items():
+                linhas.append(f"- **{nome}:** {area[esfera] or 'não é competência desta esfera.'}")
+            linhas.append("")
     linhas += [
         "> Resumo para orientar as propostas, não é parecer jurídico. Há competências comuns "
         "(art. 23 da Constituição) e concorrentes (art. 24) em que mais de uma esfera atua. "
@@ -551,6 +303,20 @@ def planejar():
         avisos.append("README.md: marcadores do índice não encontrados")
     else:
         saida[readme] = padrao.sub(lambda _: indice_readme(contagens_por_cargo), texto)
+
+    # Lista de áreas do formulário de nova medida.
+    formulario = RAIZ / ".github" / "ISSUE_TEMPLATE" / "nova-medida.yml"
+    if formulario.exists():
+        texto = formulario.read_text(encoding="utf-8")
+        padrao = re.compile(r"( *)# inicio:areas[^\n]*\n.*?# fim:areas\n", re.S)
+        m = padrao.search(texto)
+        if not m:
+            avisos.append(f"{formulario.relative_to(RAIZ)}: marcadores da lista de áreas não encontrados")
+        else:
+            recuo = m.group(1)
+            opcoes = "".join(f'{recuo}- "{a["nome"]}"\n' for a in AREAS)
+            bloco = f"{recuo}# inicio:areas (gerado por ferramentas/estrutura.py)\n{opcoes}{recuo}# fim:areas\n"
+            saida[formulario] = texto[: m.start()] + bloco + texto[m.end():]
 
     conhecidos = {(c["id"], a["id"]) for c in CARGOS for a in areas_de(c)}
     for arquivo in sorted((RAIZ / "cargos").glob("*/*.md")):

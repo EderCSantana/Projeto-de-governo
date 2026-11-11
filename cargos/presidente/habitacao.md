@@ -2,7 +2,7 @@
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Programas nacionais de moradia, financiamento habitacional e regularização fundiária em terras da União.
+> **O que este cargo faz nesta área:** Programas nacionais de moradia (Minha Casa, Minha Vida) e financiamento habitacional.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

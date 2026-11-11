@@ -2,7 +2,7 @@
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Equipamentos culturais estaduais, editais, festivais e patrimônio do estado.
+> **O que este cargo faz nesta área:** Equipamentos culturais estaduais, editais e festivais.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 
