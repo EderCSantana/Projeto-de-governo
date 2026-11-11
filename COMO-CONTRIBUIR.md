@@ -1,6 +1,18 @@
 # Como contribuir
 
-## 1. Sugerir uma medida pelo formulário (mais fácil)
+## 1. Criar uma proposta pelo site (mais fácil)
+
+1. Abra **[Nova proposta](https://edercsantana.github.io/Projeto-de-governo/#/propor)** no site.
+2. Escolha o cargo, a área e o prazo e preencha os campos: o problema, as
+   referências, os impactos, a solução, onde já foi feita, a comprovação
+   científica (ou como testar), o custo e os prós e contras.
+3. Clique em **Enviar como sugestão**. O GitHub abre uma issue já preenchida:
+   confira e envie. Quem já sabe usar pull requests pode clicar em
+   **Escrever direto na página**.
+
+O rascunho fica salvo no seu navegador enquanto você escreve.
+
+## 2. Sugerir uma medida pelo formulário do GitHub
 
 1. Vá em **Issues → New issue → Nova medida**.
 2. Escolha o cargo, a área e o prazo e descreva a medida.
@@ -8,7 +20,7 @@
 4. Quando houver acordo, a coordenação escreve a medida na página certa e fecha
    a issue com o link.
 
-## 2. Escrever direto no documento
+## 3. Escrever direto no documento
 
 1. Abra a página da área, por exemplo
    [`cargos/prefeito/saude.md`](cargos/prefeito/saude.md).

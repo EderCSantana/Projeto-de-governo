@@ -127,6 +127,39 @@
   .medida dt { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
     color: var(--muted); margin-top: 12px; }
   .medida dd { margin: 3px 0 0; font-size: 15px; }
+  .medida dd p { margin: 0 0 6px; }
+  .medida dd ul, .medida dd ol { margin: 4px 0 6px; padding-left: 22px; }
+
+  .form { max-width: 900px; }
+  .form fieldset { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card);
+    padding: 18px 22px 8px; margin: 0 0 18px; box-shadow: var(--shadow); }
+  .form legend { font-weight: 700; font-size: 17px; padding: 0 8px; margin-left: -8px; }
+  .form .intro { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+  .campo { margin-bottom: 16px; }
+  .campo label.rot { display: block; font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+  .campo .obrig { color: var(--descartada); margin-left: 2px; }
+  .campo .opc { color: var(--muted); font-weight: 400; font-size: 13px; margin-left: 6px; }
+  .campo .ajuda { color: var(--muted); font-size: 13px; margin: 0 0 6px; }
+  .campo input[type=text], .campo textarea, .campo select { width: 100%; font: inherit; font-size: 15px;
+    color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; }
+  .campo textarea { min-height: 84px; resize: vertical; line-height: 1.45; }
+  .campo input:focus, .campo textarea:focus, .campo select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .campo.erro input, .campo.erro textarea, .campo.erro select { border-color: var(--descartada); }
+  .campo .msg-erro { color: var(--descartada); font-size: 13px; margin-top: 4px; display: none; }
+  .campo.erro .msg-erro { display: block; }
+  .tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 14px; }
+  @media (max-width: 760px) { .tres { grid-template-columns: 1fr; } }
+  .opcoes { display: flex; gap: 18px; flex-wrap: wrap; }
+  .opcoes label { display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .barra-envio { position: sticky; bottom: 0; background: var(--bg); border-top: 1px solid var(--line);
+    padding: 14px 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .barra-envio .salvo { color: var(--muted); font-size: 13px; margin-left: auto; }
+  button.botao { border: 0; cursor: pointer; font: inherit; font-weight: 600; font-size: 15px; }
+  button.botao.sec { border: 1px solid var(--line); }
+  .aviso-envio { margin-top: 14px; }
+  .previa { margin: 0 0 18px; }
+  .previa > h2 { margin-top: 0; }
+  a.botao.nova { padding: 7px 14px; font-size: 14px; white-space: nowrap; }
   .medida .acoes { border-top: 1px solid var(--line); padding: 10px 16px; font-size: 14px;
     display: flex; gap: 16px; }
 
@@ -194,6 +227,7 @@
     <a href="#/modelo" data-r="modelo">Modelo</a>
   </nav>
   <div class="busca-topo"><input type="search" id="busca-topo" placeholder="Buscar medidas…" aria-label="Buscar medidas"></div>
+  <a class="botao nova" href="#/propor">+ Nova proposta</a>
 </div></header>
 <main id="app"></main>
 
@@ -219,6 +253,8 @@ const linkEditar = (cargo, area) => D.repo ? `${D.repo}/edit/main/cargos/${cargo
 
 // Converte links entre arquivos .md em rotas do site.
 function rota(href) {
+  const proprio = href.match(/^https:\/\/[\w-]+\.github\.io\/[\w.-]+\/?(#.*)?$/);
+  if (proprio) return proprio[1] || "#/";
   if (/^(https?:|mailto:|#)/.test(href)) return href;
   const limpo = href.replace(/^(\.\.\/|\.\/)+/, "");
   let m;
@@ -299,7 +335,7 @@ function trilha(...partes) {
 function cartaoMedida(m, comContexto) {
   const c = cargoPor[m.cargo], a = areaPor[m.area];
   const campos = m.campos.filter(([k]) => !/^situação$/i.test(k));
-  const oQue = (m.campos.find(([k]) => /^o que é$/i.test(k)) || [, ""])[1];
+  const oQue = (m.campos.find(([k]) => /^(solução em uma frase|o que é)$/i.test(k)) || [, ""])[1];
   const contexto = comContexto
     ? `<span class="tag">${esc(c.nome)}</span><span class="tag">${esc(a.nome)}</span><span class="tag">${PRAZO_CURTO[m.prazo]} prazo</span>`
     : "";
@@ -310,7 +346,7 @@ function cartaoMedida(m, comContexto) {
       ${oQue ? `<div class="resumo">${inline(oQue)}</div>` : ""}
       <div class="mais">Ver detalhes ▾</div>
     </summary>
-    <dl>${campos.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${inline(v)}</dd>`).join("")}
+    <dl>${campos.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${markdown(v)}</dd>`).join("")}
     ${m.notas ? `<dt>Observações</dt><dd>${markdown(m.notas)}</dd>` : ""}</dl>
     <div class="acoes">
       ${comContexto ? `<a href="#/cargo/${c.id}/${a.id}">Abrir a página da área</a>` : ""}
@@ -352,7 +388,8 @@ function paginaInicio() {
       </div>
       <div class="linha-botoes">
         <a class="botao" href="#/medidas">Ver todas as medidas</a>
-        <a class="botao sec" href="#/contribuir">Quero contribuir</a>
+        <a class="botao sec" href="#/propor">Criar uma proposta</a>
+        <a class="botao sec" href="#/contribuir">Como contribuir</a>
       </div>
     </section>
     <h2>Executivo</h2>
@@ -428,7 +465,7 @@ function paginaArea(cid, aid) {
       : `<div class="aviso leg"><p><b>Esta área na esfera ${esc(c.esfera)}:</b> ${esc(texto)}</p>
          <p><b>Como o mandato atua aqui:</b> com leis, emendas ao orçamento e fiscalização. Veja os limites na <a href="#/cargo/${cid}">página do cargo</a>.</p></div>`}
     <div class="linha-botoes" style="margin:0 0 22px">
-      ${D.repo ? `<a class="botao" href="${linkEditar(cid, aid)}" target="_blank" rel="noopener">Propor uma medida ↗</a>` : ""}
+      <a class="botao" href="#/propor/${cid}/${aid}">+ Nova proposta nesta área</a>
       <a class="botao sec" href="#/modelo">Como escrever uma medida</a>
     </div>
     <div class="prazos">${colunas}</div>`;
@@ -494,6 +531,285 @@ function paginaDoc(nome, titulo) {
   return `${trilha(["Início", "#/"], [titulo])}<article class="doc">${markdown(src)}</article>`;
 }
 
+// ---------- nova proposta ----------
+// md: "item" vira "- **Rótulo:** valor"; os demais viram uma seção "#### Rótulo".
+const PROPOSTA = [
+  { grupo: "Identificação", intro: "Onde a proposta entra no programa e quem responde por ela." },
+  { id: "titulo", rot: "Título da proposta", tipo: "linha", obrig: true, ajuda: "Curto e direto. Ex.: “Fila transparente de consultas e exames”." },
+  { id: "_local" },
+  { id: "relator", rot: "Relator(a)", tipo: "linha", obrig: true, md: "item", ajuda: "Quem apresenta e defende a proposta: nome e núcleo, ou @usuario do GitHub." },
+
+  { grupo: "O problema", intro: "Mostre que o problema existe, quem ele atinge e o tamanho dele." },
+  { id: "problema", rot: "Problema a ser resolvido", obrig: true },
+  { id: "referencias", rot: "Por que é um problema: referências", tipo: "lista", ajuda: "Dados, estudos, reportagens e links que comprovam o problema. Um por linha." },
+  { id: "probCidadaos", rot: "Impacto do problema na vida dos cidadãos", ajuda: "Quem sofre com o problema e como isso aparece no dia a dia." },
+  { id: "probEconomia", rot: "Impacto do problema na economia", ajuda: "Custos, perdas de renda, de produtividade ou de arrecadação." },
+  { id: "probOutras", rot: "Impacto do problema em outras áreas", ajuda: "Se houver. Ex.: o problema também pesa na saúde, na segurança ou na educação." },
+
+  { grupo: "A solução", intro: "O que será feito, como, e o que já se sabe sobre funcionar." },
+  { id: "resumo", rot: "Solução em uma frase", tipo: "linha", obrig: true, md: "item" },
+  { id: "descricao", rot: "Descrição da solução proposta", obrig: true, ajuda: "Explique a solução com detalhes: o que muda, para quem e quem executa." },
+  { id: "comoFazer", rot: "Como fazer", ajuda: "O instrumento (lei, decreto, programa, emenda ao orçamento, parceria…) e os passos principais." },
+  { id: "exemplos", rot: "Onde já foi feito", tipo: "lista", ajuda: "Cidades, estados ou países que já usam algo parecido, com os resultados e links. Um por linha." },
+  { id: "_evidencia" },
+  { id: "comprovacao", rot: "Comprovação científica", tipo: "lista", ajuda: "Estudos e avaliações que mostram que a solução funciona, com links. Um por linha.", se: "sim" },
+  { id: "teste", rot: "Como testar a proposta", ajuda: "Um projeto piloto: onde, por quanto tempo, comparado com quê e qual resultado decide se a medida continua ou é ampliada.", se: "nao" },
+
+  { grupo: "Impactos da solução", intro: "O que melhora, para quem, e quanto custa." },
+  { id: "impacto", rot: "Impacto esperado", ajuda: "O resultado principal que a solução deve trazer e em quanto tempo." },
+  { id: "medir", rot: "Como medir", ajuda: "Indicador e meta com número e prazo. Ex.: “fila de cirurgias de 120 para 30 dias em 2 anos”." },
+  { id: "solCidadaos", rot: "Impacto positivo na vida dos cidadãos" },
+  { id: "solEconomia", rot: "Impacto na economia" },
+  { id: "solOutras", rot: "Impacto em outras áreas", ajuda: "Se houver efeitos em outras áreas, bons ou ruins." },
+  { id: "custo", rot: "Custo estimado e fonte dos recursos", ajuda: "Quanto custa e de onde sai o dinheiro. Medidas com custo e sem fonte não são aprovadas." },
+
+  { grupo: "Prós e contras", intro: "Ser honesto sobre os contras fortalece a proposta na discussão." },
+  { id: "pros", rot: "Prós", tipo: "lista", ajuda: "Um por linha." },
+  { id: "contras", rot: "Contras", tipo: "lista", ajuda: "Riscos, custos, resistências e quem perde com a medida. Um por linha." },
+];
+const CHAVE_RASCUNHO = "projeto-de-governo:rascunho";
+
+function lerRascunho() {
+  try { return JSON.parse(localStorage.getItem(CHAVE_RASCUNHO)) || {}; } catch { return {}; }
+}
+
+function opcoesArea(cid, sel) {
+  const c = cargoPor[cid];
+  if (!c) return `<option value="">Escolha o cargo primeiro</option>`;
+  return `<option value="">Escolha a área</option>` + D.eixos.map(ex => {
+    const as = c.areas.filter(aid => areaPor[aid].eixo === ex.id);
+    return as.length ? `<optgroup label="${esc(ex.nome)}">${as.map(aid =>
+      `<option value="${aid}" ${aid === sel ? "selected" : ""}>${esc(areaPor[aid].nome)}</option>`).join("")}</optgroup>` : "";
+  }).join("");
+}
+
+function opcoesPrazo(cid, sel) {
+  const c = cargoPor[cid];
+  return `<option value="">Escolha o prazo</option>` + D.prazos.map((p, i) =>
+    `<option value="${i}" ${String(i) === String(sel) ? "selected" : ""}>${esc(p.nome)}: ${esc(p.descricao.replace("{mandato}", c ? c.mandato : 4)).replace(/\.$/, "")}</option>`).join("");
+}
+
+function campoHTML(f, v) {
+  if (f.id === "_local") {
+    return `<div class="tres">
+      <div class="campo" data-campo="cargo"><label class="rot" for="p-cargo">Cargo<span class="obrig">*</span></label>
+        <select id="p-cargo" name="cargo"><option value="">Escolha o cargo</option>${D.cargos.map(c =>
+          `<option value="${c.id}" ${c.id === v.cargo ? "selected" : ""}>${esc(c.nome)}</option>`).join("")}</select>
+        <div class="msg-erro">Escolha o cargo.</div></div>
+      <div class="campo" data-campo="area"><label class="rot" for="p-area">Área<span class="obrig">*</span></label>
+        <select id="p-area" name="area">${opcoesArea(v.cargo, v.area)}</select>
+        <div class="msg-erro">Escolha a área.</div></div>
+      <div class="campo" data-campo="prazo"><label class="rot" for="p-prazo">Prazo<span class="obrig">*</span></label>
+        <select id="p-prazo" name="prazo">${opcoesPrazo(v.cargo, v.prazo)}</select>
+        <div class="msg-erro">Escolha o prazo.</div></div>
+    </div>
+    <p class="ajuda" id="p-competencia" style="margin:-6px 0 16px;color:var(--muted);font-size:14px"></p>`;
+  }
+  if (f.id === "_evidencia") {
+    return `<div class="campo"><span class="rot" style="font-weight:600;display:block;margin-bottom:6px">Existe comprovação científica de que a solução funciona?</span>
+      <div class="opcoes">
+        <label><input type="radio" name="evidencia" value="sim" ${v.evidencia === "sim" ? "checked" : ""}> Sim</label>
+        <label><input type="radio" name="evidencia" value="nao" ${v.evidencia === "nao" ? "checked" : ""}> Não, ou não sei: vamos propor um teste</label>
+      </div></div>`;
+  }
+  const valor = v[f.id] || "";
+  const entrada = f.tipo === "linha"
+    ? `<input type="text" id="p-${f.id}" name="${f.id}" value="${esc(valor)}">`
+    : `<textarea id="p-${f.id}" name="${f.id}" rows="${f.tipo === "lista" ? 3 : 4}">${esc(valor)}</textarea>`;
+  return `<div class="campo" data-campo="${f.id}" ${f.se ? `data-se="${f.se}" ${v.evidencia === f.se ? "" : "hidden"}` : ""}>
+    <label class="rot" for="p-${f.id}">${esc(f.rot)}${f.obrig ? `<span class="obrig">*</span>` : `<span class="opc">opcional</span>`}</label>
+    ${f.ajuda ? `<p class="ajuda">${esc(f.ajuda)}</p>` : ""}
+    ${entrada}
+    <div class="msg-erro">Preencha este campo.</div>
+  </div>`;
+}
+
+function paginaPropor(cid, aid) {
+  const v = lerRascunho();
+  if (cargoPor[cid]) { v.cargo = cid; v.area = cargoPor[cid].areas.includes(aid) ? aid : ""; }
+  let html = "", aberto = false;
+  for (const f of PROPOSTA) {
+    if (f.grupo) {
+      html += (aberto ? "</fieldset>" : "") + `<fieldset><legend>${esc(f.grupo)}</legend><p class="intro">${esc(f.intro)}</p>`;
+      aberto = true;
+    } else html += campoHTML(f, v);
+  }
+  html += "</fieldset>";
+  return `
+    ${trilha(["Início", "#/"], ["Nova proposta"])}
+    <h1>Nova proposta</h1>
+    <p class="sub">Preencha o que souber. Só os campos com <span style="color:var(--descartada)">*</span> são obrigatórios,
+    mas uma proposta com dados, exemplos e prós e contras tem muito mais chance de ser aprovada.
+    O rascunho fica salvo neste navegador enquanto você escreve.</p>
+    <form class="form" id="form-proposta" novalidate>
+      ${html}
+      <section class="previa" id="previa" hidden></section>
+      <div class="barra-envio">
+        <button type="button" class="botao" id="b-issue">Enviar como sugestão ↗</button>
+        <button type="button" class="botao sec" id="b-pr">Escrever direto na página ↗</button>
+        <button type="button" class="botao sec" id="b-previa">Pré-visualizar</button>
+        <button type="button" class="botao sec" id="b-copiar">Copiar texto</button>
+        <button type="button" class="botao sec" id="b-baixar">Baixar .md</button>
+        <button type="button" class="botao sec" id="b-limpar">Limpar</button>
+        <span class="salvo" id="salvo"></span>
+      </div>
+      <div class="aviso aviso-envio" id="aviso-envio" hidden></div>
+    </form>`;
+}
+
+function valoresProposta() {
+  const form = document.getElementById("form-proposta");
+  const v = Object.fromEntries(new FormData(form).entries());
+  v.evidencia = v.evidencia || "";
+  return v;
+}
+
+function validarProposta(v) {
+  const faltando = ["titulo", "cargo", "area", "prazo", "relator", "problema", "resumo", "descricao"].filter(k => !String(v[k] || "").trim());
+  document.querySelectorAll("#form-proposta .campo").forEach(el => el.classList.toggle("erro", faltando.includes(el.dataset.campo)));
+  if (faltando.length) {
+    const primeiro = document.querySelector(`#form-proposta .campo[data-campo="${faltando[0]}"]`);
+    primeiro?.scrollIntoView({ behavior: "smooth", block: "center" });
+    primeiro?.querySelector("input, textarea, select")?.focus({ preventScroll: true });
+  }
+  return !faltando.length;
+}
+
+// Texto livre seguro para o markdown da página: sem títulos que quebrem a estrutura.
+const textoMd = s => String(s || "").trim().replace(/\r/g, "").replace(/^(\s*)#/gm, "$1\\#").replace(/\n{3,}/g, "\n\n");
+const linhaMd = s => String(s || "").replace(/\s+/g, " ").trim();
+const listaMd = s => String(s || "").split(/\r?\n/).map(l => l.trim().replace(/^([-*•]|\d+[.)])\s+/, "")).filter(Boolean)
+  .map(l => "- " + l.replace(/^#/, "\\#")).join("\n");
+
+function camposProposta(v) {
+  const usados = PROPOSTA.filter(f => f.rot && f.id !== "titulo" && (!f.se || v.evidencia === f.se) && String(v[f.id] || "").trim());
+  const valor = f => f.tipo === "lista" ? listaMd(v[f.id]) : f.tipo === "linha" ? linhaMd(v[f.id]) : textoMd(v[f.id]);
+  const itens = usados.filter(f => f.md === "item").sort((x, y) => (y.id === "resumo") - (x.id === "resumo")).map(f => [f.rot, valor(f)]);
+  const secoes = usados.filter(f => f.md !== "item").map(f => [f.rot, valor(f)]);
+  return { itens: [...itens, ["Situação", "proposta"]], secoes };
+}
+
+function markdownProposta(v) {
+  const { itens, secoes } = camposProposta(v);
+  return [`### ${linhaMd(v.titulo)}`, "", ...itens.map(([k, x]) => `- **${k}:** ${x}`), "",
+    ...secoes.flatMap(([k, x]) => [`#### ${k}`, "", x, ""])].join("\n");
+}
+
+function destinoProposta(v) {
+  const c = cargoPor[v.cargo], a = areaPor[v.area], p = D.prazos[Number(v.prazo)];
+  return { c, a, p, arquivo: `cargos/${v.cargo}/${v.area}.md` };
+}
+
+function corpoIssue(v, md) {
+  const { c, a, p, arquivo } = destinoProposta(v);
+  return `**Cargo:** ${c.nome} · **Área:** ${a.nome} · **Prazo:** ${p.nome}\n` +
+    `**Página:** [${arquivo}](${D.repo}/blob/main/${arquivo})\n\n---\n\n${md}`;
+}
+
+async function copiarTexto(texto) {
+  try { await navigator.clipboard.writeText(texto); return true; } catch {
+    const t = Object.assign(document.createElement("textarea"), { value: texto });
+    document.body.append(t); t.select();
+    const ok = document.execCommand("copy"); t.remove(); return ok;
+  }
+}
+
+function avisoEnvio(html) {
+  const el = document.getElementById("aviso-envio");
+  el.innerHTML = html; el.hidden = false;
+  el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function ligarPropor() {
+  const form = document.getElementById("form-proposta");
+  const sel = id => document.getElementById(id);
+  let timer;
+  const salvar = () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      localStorage.setItem(CHAVE_RASCUNHO, JSON.stringify(valoresProposta()));
+      sel("salvo").textContent = "Rascunho salvo neste navegador";
+    }, 400);
+  };
+  const competencia = () => {
+    const c = cargoPor[sel("p-cargo").value], a = areaPor[sel("p-area").value];
+    sel("p-competencia").innerHTML = c && a
+      ? `<b>${esc(c.poder === "executivo" ? "O que este cargo faz nesta área" : "Esta área na esfera " + c.esfera)}:</b> ${esc(a[c.esfera])}`
+      : "";
+  };
+  sel("p-cargo").addEventListener("change", () => {
+    const area = sel("p-area").value, prazo = sel("p-prazo").value;
+    sel("p-area").innerHTML = opcoesArea(sel("p-cargo").value, area);
+    sel("p-prazo").innerHTML = opcoesPrazo(sel("p-cargo").value, prazo);
+  });
+  form.addEventListener("input", salvar);
+  form.addEventListener("change", ev => {
+    if (ev.target.name === "evidencia")
+      form.querySelectorAll("[data-se]").forEach(el => el.hidden = el.dataset.se !== ev.target.value);
+    competencia(); salvar();
+  });
+  competencia();
+
+  const pronto = () => { const v = valoresProposta(); return validarProposta(v) ? v : null; };
+
+  sel("b-previa").addEventListener("click", () => {
+    const v = pronto(); if (!v) return;
+    const { itens, secoes } = camposProposta(v);
+    const m = { cargo: v.cargo, area: v.area, prazo: Number(v.prazo), titulo: linhaMd(v.titulo),
+      situacao: "proposta", campos: [...itens, ...secoes], notas: "" };
+    const previa = sel("previa");
+    previa.innerHTML = `<h2>Pré-visualização</h2>${cartaoMedida(m, true)}`;
+    previa.querySelector("details").open = true;
+    previa.hidden = false;
+    previa.scrollIntoView({ behavior: "smooth" });
+  });
+
+  sel("b-issue").addEventListener("click", async () => {
+    const v = pronto(); if (!v) return;
+    const md = markdownProposta(v), corpo = corpoIssue(v, md);
+    const base = `${D.repo}/issues/new?labels=medida,proposta&title=${encodeURIComponent("[Medida] " + linhaMd(v.titulo))}`;
+    let url = `${base}&body=${encodeURIComponent(corpo)}`;
+    if (url.length > 7000) {
+      await copiarTexto(corpo);
+      url = `${base}&body=${encodeURIComponent("(Cole aqui o texto da proposta: ele já está copiado. Use Ctrl+V.)")}`;
+      avisoEnvio(`<p><b>A proposta é longa, então o texto foi copiado.</b> Na página do GitHub que abriu, apague a frase da descrição e cole com <b>Ctrl+V</b>. Depois clique em <b>Submit new issue</b>.</p>`);
+    } else {
+      avisoEnvio(`<p><b>Abrimos a página do GitHub com a proposta preenchida.</b> Confira e clique em <b>Submit new issue</b>. A discussão acontece nos comentários, e a coordenação passa a medida para a página da área quando houver acordo.</p>`);
+    }
+    window.open(url, "_blank", "noopener");
+  });
+
+  sel("b-pr").addEventListener("click", async () => {
+    const v = pronto(); if (!v) return;
+    const { p, arquivo } = destinoProposta(v);
+    await copiarTexto("\n" + markdownProposta(v));
+    window.open(`${D.repo}/edit/main/${arquivo}`, "_blank", "noopener");
+    avisoEnvio(`<p><b>O texto da proposta foi copiado.</b> Na página que abriu (<code>${esc(arquivo)}</code>):</p>
+      <ol><li>Procure a seção <b>## ${esc(p.nome)}</b> e, logo abaixo da linha <code>&lt;!-- Adicione as medidas aqui… --&gt;</code>, cole com <b>Ctrl+V</b>.</li>
+      <li>Clique em <b>Commit changes…</b>, escolha <i>Create a new branch and start a pull request</i> e confirme.</li></ol>
+      <p>Se o GitHub pedir, faça um <i>fork</i>: é normal para quem não é da coordenação.</p>`);
+  });
+
+  sel("b-copiar").addEventListener("click", async () => {
+    const v = pronto(); if (!v) return;
+    const ok = await copiarTexto(markdownProposta(v));
+    avisoEnvio(ok ? `<p>Texto copiado no formato do <a href="#/modelo">modelo de medida</a>.</p>` : `<p>Não foi possível copiar. Use “Baixar .md”.</p>`);
+  });
+
+  sel("b-baixar").addEventListener("click", () => {
+    const v = pronto(); if (!v) return;
+    const blob = new Blob([corpoIssue(v, markdownProposta(v))], { type: "text/markdown;charset=utf-8" });
+    const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: `${slug(linhaMd(v.titulo)).replace(/[^a-z0-9-]/g, "") || "proposta"}.md` });
+    a.click(); URL.revokeObjectURL(a.href);
+  });
+
+  sel("b-limpar").addEventListener("click", () => {
+    if (!confirm("Apagar tudo o que foi escrito nesta proposta?")) return;
+    localStorage.removeItem(CHAVE_RASCUNHO);
+    render();
+  });
+}
+
 function naoAchou() {
   return `<h1>Página não encontrada</h1><p class="sub">Esse endereço não existe no projeto.</p><a class="botao" href="#/">Voltar ao início</a>`;
 }
@@ -510,6 +826,7 @@ function render() {
   else if (p0 === "competencias") html = paginaCompetencias();
   else if (p0 === "contribuir") html = paginaDoc("contribuir", "Como contribuir");
   else if (p0 === "modelo") html = paginaDoc("modelo", "Modelo de medida");
+  else if (p0 === "propor") html = paginaPropor(p1, p2);
   else html = naoAchou();
 
   const app = document.getElementById("app");
@@ -543,6 +860,7 @@ function render() {
     app.querySelectorAll(".chip").forEach(ch => ch.addEventListener("click", () =>
       document.getElementById("eixo-" + ch.dataset.eixo)?.scrollIntoView({ behavior: "smooth" })));
   }
+  if (p0 === "propor") ligarPropor();
   if (p0 === "competencias") {
     app.querySelectorAll("tr.linha").forEach(tr => tr.addEventListener("click", () => {
       const det = app.querySelector(`tr[data-det="${tr.dataset.area}"]`);

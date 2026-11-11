@@ -43,27 +43,40 @@ def repositorio():
 
 
 def medidas_do_arquivo(texto):
-    """Lista as medidas de uma página de área: prazo, título, campos e notas."""
+    """Lista as medidas de uma página de área: prazo, título, campos e notas.
+
+    Campos curtos são itens "- **Nome:** valor". Campos longos são seções
+    "#### Nome" com texto livre em markdown até o próximo título.
+    """
     if e.MARCADOR in texto:
         texto = texto.split(e.MARCADOR, 1)[1]
     texto = re.sub(r"<!--.*?-->", "", texto, flags=re.S)
-    medidas, prazo, atual = [], None, None
+    medidas, prazo, atual, secao = [], None, None, False
     for linha in texto.splitlines():
         if linha.startswith("## "):
             prazo = next((i for i, (t, _) in enumerate(e.PRAZOS) if linha[3:].startswith(t)), None)
-            atual = None
+            atual, secao = None, False
         elif linha.startswith("### ") and prazo is not None:
             atual = dict(prazo=prazo, titulo=linha[4:].strip(), campos=[], notas="")
             medidas.append(atual)
-        elif atual is not None:
+            secao = False
+        elif atual is None:
+            continue
+        elif linha.startswith("#### "):
+            atual["campos"].append([linha[5:].strip(), ""])
+            secao = True
+        elif secao:
+            atual["campos"][-1][1] += linha + "\n"
+        else:
             m = CAMPO.match(linha)
             if m:
                 atual["campos"].append([m.group(1).strip(), m.group(2).strip()])
             elif linha.strip() and atual["campos"] and linha.startswith((" ", "\t")):
-                atual["campos"][-1][1] += " " + linha.strip()
+                atual["campos"][-1][1] += "\n" + re.sub(r"^(  |\t)", "", linha)
             elif linha.strip():
                 atual["notas"] += linha + "\n"
     for m in medidas:
+        m["campos"] = [[k, v.strip()] for k, v in m["campos"] if v.strip()]
         campos = dict((k.lower(), v) for k, v in m["campos"])
         m["situacao"] = campos.get("situação", "proposta").strip("`. ").lower() or "proposta"
         m["autor"] = campos.get("proposta por", "")
