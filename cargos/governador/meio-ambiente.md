@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Governador(a)
+# Meio ambiente · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Órgão ambiental estadual, licenciamento, unidades de conservação estaduais e gestão dos recursos hídricos do estado.
+> **O que este cargo faz nesta área:** Órgão ambiental estadual, licenciamento e fiscalização.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

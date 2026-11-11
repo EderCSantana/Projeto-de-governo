@@ -1,8 +1,8 @@
-# Agricultura, pecuária e abastecimento · Vereador(a)
+# Agricultura · Vereador(a)
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Estradas vicinais, compra da agricultura familiar para a merenda, feiras, mercados municipais e hortas urbanas.
+> **Esta área na esfera municipal:** Estradas vicinais, patrulha mecanizada, hortas urbanas e apoio a produtores locais.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

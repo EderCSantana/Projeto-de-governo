@@ -1,8 +1,8 @@
-# Defesa civil e desastres · Senador(a)
+# Defesa civil · Senador(a)
 
 [← Senador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Sistema Nacional de Proteção e Defesa Civil, recursos para resposta e reconstrução e alertas e monitoramento (Cemaden).
+> **Esta área na esfera federal:** Sistema Nacional de Proteção e Defesa Civil, recursos para resposta e reconstrução após desastres e alertas e monitoramento (Cemaden).
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

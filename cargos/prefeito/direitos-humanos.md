@@ -1,8 +1,8 @@
-# Direitos humanos e cidadania · Prefeito(a)
+# Direitos humanos · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Conselhos tutelares, centros de referência, acessibilidade e políticas locais para mulheres, juventude, pessoas idosas e igualdade racial.
+> **O que este cargo faz nesta área:** Centros de referência em direitos humanos, conselho municipal e educação em direitos.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

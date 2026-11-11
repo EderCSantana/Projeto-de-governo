@@ -2,7 +2,7 @@
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Polícia Federal, Polícia Rodoviária Federal, Força Nacional, controle de fronteiras, armas e crimes interestaduais e internacionais, presídios federais, Fundo Nacional de Segurança Pública e legislação penal.
+> **O que este cargo faz nesta área:** Polícia Federal, Polícia Rodoviária Federal, Força Nacional, controle de fronteiras, armas e crimes interestaduais e internacionais, Fundo Nacional de Segurança Pública e legislação penal.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

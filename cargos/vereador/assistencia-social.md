@@ -2,7 +2,7 @@
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** CRAS e CREAS, abrigos, acompanhamento de famílias, inscrição no Cadastro Único e atendimento à população em situação de rua.
+> **Esta área na esfera municipal:** CRAS e CREAS, abrigos, acompanhamento de famílias e inscrição no Cadastro Único.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

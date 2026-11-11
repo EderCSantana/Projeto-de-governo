@@ -2,7 +2,7 @@
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** INSS e Regime Geral de Previdência Social: regras de aposentadoria, pensões e benefícios.
+> **O que este cargo faz nesta área:** INSS e Regime Geral de Previdência Social: regras de aposentadoria, pensões e benefícios, e normas gerais dos regimes próprios dos servidores.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

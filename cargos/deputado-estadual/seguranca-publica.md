@@ -2,7 +2,7 @@
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera estadual:** Polícia Militar, Polícia Civil, Corpo de Bombeiros, polícia científica e sistema prisional. É o principal responsável pela segurança no dia a dia.
+> **Esta área na esfera estadual:** Polícia Militar, Polícia Civil, Corpo de Bombeiros e polícia científica. É o principal responsável pela segurança no dia a dia.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

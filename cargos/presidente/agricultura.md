@@ -1,8 +1,8 @@
-# Agricultura, pecuária e abastecimento · Presidente da República
+# Agricultura · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Plano Safra, crédito rural (Pronaf), Embrapa, defesa agropecuária, reforma agrária (Incra) e Conab.
+> **O que este cargo faz nesta área:** Plano Safra, crédito e seguro rural, Embrapa, zoneamento agrícola e defesa vegetal.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

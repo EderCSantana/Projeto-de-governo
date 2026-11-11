@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Prefeito(a)
+# Desenvolvimento econômico · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Alvarás e ambiente de negócios local, Sala do Empreendedor, feiras e comércio local e Procon municipal.
+> **O que este cargo faz nesta área:** Atração de empresas, distritos industriais e ambiente de negócios local.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

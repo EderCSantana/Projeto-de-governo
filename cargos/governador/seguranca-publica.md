@@ -2,7 +2,7 @@
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Polícia Militar, Polícia Civil, Corpo de Bombeiros, polícia científica e sistema prisional. É o principal responsável pela segurança no dia a dia.
+> **O que este cargo faz nesta área:** Polícia Militar, Polícia Civil, Corpo de Bombeiros e polícia científica. É o principal responsável pela segurança no dia a dia.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

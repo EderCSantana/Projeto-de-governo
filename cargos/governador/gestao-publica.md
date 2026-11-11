@@ -1,8 +1,8 @@
-# Gestão pública, transparência e combate à corrupção · Governador(a)
+# Gestão pública · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Servidores do estado, compras, controladoria, transparência e atendimento ao cidadão.
+> **O que este cargo faz nesta área:** Organização das secretarias, planejamento e metas do governo do estado.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

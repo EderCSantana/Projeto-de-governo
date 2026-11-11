@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Governador(a)
+# Desenvolvimento econômico · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Atração de investimentos, agências e bancos de fomento estaduais e Procon estadual.
+> **O que este cargo faz nesta área:** Atração de investimentos, agências e bancos de fomento estaduais e incentivos fiscais dentro das regras da reforma tributária.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

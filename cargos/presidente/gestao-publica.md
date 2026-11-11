@@ -1,8 +1,8 @@
-# Gestão pública, transparência e combate à corrupção · Presidente da República
+# Gestão pública · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Servidores federais, compras públicas, Controladoria-Geral da União, transparência e relação com estados e municípios.
+> **O que este cargo faz nesta área:** Organização dos ministérios, planejamento e avaliação de políticas públicas.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

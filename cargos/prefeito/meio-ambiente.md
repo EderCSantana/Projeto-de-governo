@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Prefeito(a)
+# Meio ambiente · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Licenciamento de impacto local, arborização, áreas verdes, fiscalização local e educação ambiental.
+> **O que este cargo faz nesta área:** Licenciamento de impacto local, fiscalização, arborização e educação ambiental.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

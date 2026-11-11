@@ -1,8 +1,8 @@
-# Gestão pública, transparência e combate à corrupção · Deputado(a) federal
+# Gestão pública · Deputado(a) federal
 
 [← Deputado(a) federal](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** Servidores federais, compras públicas, Controladoria-Geral da União, transparência e relação com estados e municípios.
+> **Esta área na esfera federal:** Organização dos ministérios, planejamento e avaliação de políticas públicas.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

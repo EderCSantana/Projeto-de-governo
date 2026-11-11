@@ -1,8 +1,8 @@
-# Agricultura, pecuária e abastecimento · Deputado(a) estadual ou distrital
+# Agricultura · Deputado(a) estadual ou distrital
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera estadual:** Assistência técnica e extensão rural, defesa sanitária animal e vegetal e estradas rurais estaduais.
+> **Esta área na esfera estadual:** Assistência técnica e extensão rural, defesa sanitária vegetal e pesquisa agropecuária estadual.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

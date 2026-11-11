@@ -2,7 +2,7 @@
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Guarda municipal, videomonitoramento, iluminação pública, ocupação de espaços públicos e prevenção da violência. O município não comanda polícia.
+> **Esta área na esfera municipal:** Guarda municipal, videomonitoramento, ocupação de espaços públicos e prevenção da violência. O município não comanda polícia.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

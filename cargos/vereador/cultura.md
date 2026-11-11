@@ -2,7 +2,7 @@
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Centros culturais, bibliotecas, festas populares, editais locais e patrimônio do município.
+> **Esta área na esfera municipal:** Centros culturais, bibliotecas, festas populares e editais locais.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

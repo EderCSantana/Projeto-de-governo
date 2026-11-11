@@ -1,8 +1,8 @@
-# Meio ambiente e clima · Vereador(a)
+# Meio ambiente · Vereador(a)
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Licenciamento de impacto local, arborização, áreas verdes, fiscalização local e educação ambiental.
+> **Esta área na esfera municipal:** Licenciamento de impacto local, fiscalização, arborização e educação ambiental.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

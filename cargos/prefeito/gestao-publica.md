@@ -1,8 +1,8 @@
-# Gestão pública, transparência e combate à corrupção · Prefeito(a)
+# Gestão pública · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Servidores municipais, compras, ouvidoria, transparência e atendimento ao cidadão.
+> **O que este cargo faz nesta área:** Organização das secretarias, planejamento e metas da prefeitura.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

@@ -1,8 +1,8 @@
-# Agricultura, pecuária e abastecimento · Prefeito(a)
+# Agricultura · Prefeito(a)
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Estradas vicinais, compra da agricultura familiar para a merenda, feiras, mercados municipais e hortas urbanas.
+> **O que este cargo faz nesta área:** Estradas vicinais, patrulha mecanizada, hortas urbanas e apoio a produtores locais.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

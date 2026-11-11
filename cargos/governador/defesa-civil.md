@@ -1,4 +1,4 @@
-# Defesa civil e desastres · Governador(a)
+# Defesa civil · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 

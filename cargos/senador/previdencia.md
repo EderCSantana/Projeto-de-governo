@@ -2,7 +2,7 @@
 
 [← Senador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera federal:** INSS e Regime Geral de Previdência Social: regras de aposentadoria, pensões e benefícios.
+> **Esta área na esfera federal:** INSS e Regime Geral de Previdência Social: regras de aposentadoria, pensões e benefícios, e normas gerais dos regimes próprios dos servidores.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

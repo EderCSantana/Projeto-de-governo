@@ -1,8 +1,8 @@
-# Defesa civil e desastres · Presidente da República
+# Defesa civil · Presidente da República
 
 [← Presidente da República](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Sistema Nacional de Proteção e Defesa Civil, recursos para resposta e reconstrução e alertas e monitoramento (Cemaden).
+> **O que este cargo faz nesta área:** Sistema Nacional de Proteção e Defesa Civil, recursos para resposta e reconstrução após desastres e alertas e monitoramento (Cemaden).
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

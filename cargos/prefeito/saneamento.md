@@ -2,7 +2,7 @@
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** É o titular do serviço: água, esgoto, coleta e destinação do lixo e drenagem. Presta diretamente ou contrata e faz o plano municipal de saneamento.
+> **O que este cargo faz nesta área:** É o titular do serviço de água, esgoto e drenagem. Presta diretamente ou contrata e faz o plano municipal de saneamento.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

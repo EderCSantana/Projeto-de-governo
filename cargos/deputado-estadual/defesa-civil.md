@@ -1,4 +1,4 @@
-# Defesa civil e desastres · Deputado(a) estadual ou distrital
+# Defesa civil · Deputado(a) estadual ou distrital
 
 [← Deputado(a) estadual ou distrital](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 

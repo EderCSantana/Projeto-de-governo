@@ -2,7 +2,7 @@
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Guarda municipal, videomonitoramento, iluminação pública, ocupação de espaços públicos e prevenção da violência. O município não comanda polícia.
+> **O que este cargo faz nesta área:** Guarda municipal, videomonitoramento, ocupação de espaços públicos e prevenção da violência. O município não comanda polícia.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

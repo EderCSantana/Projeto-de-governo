@@ -2,7 +2,7 @@
 
 [← Prefeito(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Cadastro e seleção das famílias, terrenos, regularização fundiária urbana, urbanização de favelas e aluguel social.
+> **O que este cargo faz nesta área:** Cadastro e seleção das famílias, terrenos, urbanização de favelas e aluguel social.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

@@ -1,8 +1,8 @@
-# Agricultura, pecuária e abastecimento · Governador(a)
+# Agricultura · Governador(a)
 
 [← Governador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **O que este cargo faz nesta área:** Assistência técnica e extensão rural, defesa sanitária animal e vegetal e estradas rurais estaduais.
+> **O que este cargo faz nesta área:** Assistência técnica e extensão rural, defesa sanitária vegetal e pesquisa agropecuária estadual.
 
 <!-- Fim do cabeçalho gerado. Escreva as medidas abaixo seguindo o MODELO.md. -->
 

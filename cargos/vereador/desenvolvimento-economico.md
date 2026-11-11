@@ -1,8 +1,8 @@
-# Desenvolvimento econômico, indústria e comércio · Vereador(a)
+# Desenvolvimento econômico · Vereador(a)
 
 [← Vereador(a)](README.md) · [Modelo de medida](../../MODELO.md) · [Quem faz o quê](../../COMPETENCIAS.md)
 
-> **Esta área na esfera municipal:** Alvarás e ambiente de negócios local, Sala do Empreendedor, feiras e comércio local e Procon municipal.
+> **Esta área na esfera municipal:** Atração de empresas, distritos industriais e ambiente de negócios local.
 >
 > **Como o mandato atua aqui:** com leis, emendas ao orçamento e fiscalização. Veja os limites no [índice do cargo](README.md).
 

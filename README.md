@@ -5,6 +5,10 @@ cada **cargo** em disputa há uma seção, e para cada **área pública** que es
 cargo pode gerir há propostas de **curto, médio e longo prazo**. Qualquer
 filiado pode sugerir medidas, e elas são discutidas e aprovadas aqui mesmo.
 
+**[Abrir o site do Projeto de Governo](https://edercsantana.github.io/Projeto-de-governo/)**: a mesma informação com busca, filtros e navegação por cargo e área. O site é refeito
+sozinho a cada mudança na `main`. Para ver no seu computador, rode
+`python ferramentas/gerar_site.py --abrir`.
+
 ## Como está organizado
 
 ```
@@ -21,6 +25,10 @@ cargos/
     educacao.md
     ...
 COMPETENCIAS.md        quem faz o quê: áreas × esferas × cargos
+ferramentas/
+  areas.py             a lista de áreas, por eixo, e o que cada esfera faz nelas
+  estrutura.py         cria as páginas e refaz os índices
+  gerar_site.py        gera o site
 MODELO.md              como escrever uma medida
 COMO-CONTRIBUIR.md     passo a passo para participar
 ```
@@ -44,13 +52,13 @@ do Legislativo, as medidas são leis, emendas ao orçamento e fiscalização, e 
 <!-- inicio:indice (gerado por ferramentas/estrutura.py) -->
 | Cargo | Esfera | Áreas | Medidas |
 |---|---|:-:|:-:|
-| [Presidente da República](cargos/presidente/README.md) | União | 27 | 1 |
-| [Governador(a)](cargos/governador/README.md) | Estado | 23 | 1 |
-| [Prefeito(a)](cargos/prefeito/README.md) | Município | 23 | 1 |
-| [Senador(a)](cargos/senador/README.md) | União | 27 | 1 |
-| [Deputado(a) federal](cargos/deputado-federal/README.md) | União | 27 | 1 |
-| [Deputado(a) estadual ou distrital](cargos/deputado-estadual/README.md) | Estado | 23 | 1 |
-| [Vereador(a)](cargos/vereador/README.md) | Município | 23 | 1 |
+| [Presidente da República](cargos/presidente/README.md) | União | 91 | 1 |
+| [Governador(a)](cargos/governador/README.md) | Estado | 84 | 1 |
+| [Prefeito(a)](cargos/prefeito/README.md) | Município | 80 | 1 |
+| [Senador(a)](cargos/senador/README.md) | União | 91 | 1 |
+| [Deputado(a) federal](cargos/deputado-federal/README.md) | União | 91 | 1 |
+| [Deputado(a) estadual ou distrital](cargos/deputado-estadual/README.md) | Estado | 84 | 1 |
+| [Vereador(a)](cargos/vereador/README.md) | Município | 80 | 1 |
 <!-- fim:indice -->
 
 ## Como participar
